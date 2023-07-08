@@ -103,11 +103,36 @@ nav a:hover{
     font-size: 4rem;
     color: var(--sky);
     animation-name:  rainbow;
-    animation-duration: 1.6s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 .header p{
     color: #646464;
     margin: 1rem 0;
     width:70%;
+}
+
+.about{
+    max-width: 1084px;
+    background: #00aeff1f;
+    margin: 5rem auto;
+    padding: 5rem 8rem;
+    text-align: justify;
+}
+.about h2{
+    text-align: center;
+}
+.about-description{
+    font-size: 1.2rem;
+    color: #646464;
+    margin-top: 3rem;
+}
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.info p{
+    color: #646464;
+    font-size: 1rem;
 }
