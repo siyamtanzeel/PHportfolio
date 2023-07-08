@@ -5,17 +5,30 @@
 }
 :root{
     --orange : #FD6E0A;
-    --sky: rgb(0, 174, 255);
+    --sky: #00aeff;
     --pink: rgb(255, 0, 128);
     --green:rgb(0, 255, 85);
 }
+@keyframes rainbow {
+    0%{color: #00aeff;}
+    50%{color:#00f7ff}
+    100%{color: #00aeff;}
+  }
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+
+
 nav{ 
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav>ul{
     display: flex;
@@ -45,7 +58,8 @@ nav a:hover{
 }
 .btn-primary{
     color:white;
-    padding:0.5rem 1rem;
+    font-size: 1rem;
+    padding:0.8rem 1.4rem;
     background: var(--pink);
     border: none;
     border-radius: 0.4rem;
@@ -53,5 +67,47 @@ nav a:hover{
 .btn-primary:hover{
     transition: ease-in-out;
     transition-duration: 300ms;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 119, 0.308), 0 6px 20px 0 rgba(255, 0, 106, 0.548);
+}
+.btn-secondary{
+    color:var(--pink) ;
+    font-size: 1rem;
+    padding:0.8rem 1.4rem;
+    border: 0.1rem solid var(--pink);
+    border-radius: 0.5rem;
+}
+.btn-secondary:hover{
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    background: var(--pink);
+    color: white;
+}
+.header{
+    background: #00aeff1f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner{
+    text-align: left;
+    margin: 0 4rem;
+    width: max-content;
+}
+.banner button{
+    margin-right: 1rem;
+}
+.header-greeting{
+    font-size: 3rem;
+}
+.header-title{
+    font-size: 4rem;
+    color: var(--sky);
+    animation-name:  rainbow;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+.header p{
+    color: #646464;
+    margin: 1rem 0;
+    width:70%;
 }
