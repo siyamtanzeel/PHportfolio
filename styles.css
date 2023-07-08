@@ -1,3 +1,57 @@
-h1{
-    color:rgb(255, 0, 85)
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange : #FD6E0A;
+    --sky: rgb(0, 174, 255);
+    --pink: rgb(255, 0, 128);
+    --green:rgb(0, 255, 85);
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+}
+nav>h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+nav span{
+    color: var(--sky);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+nav a:hover{
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    color: rgb(145, 145, 145);
+}
+.btn-primary{
+    color:white;
+    padding:0.5rem 1rem;
+    background: var(--pink);
+    border: none;
+    border-radius: 0.4rem;
+}
+.btn-primary:hover{
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
